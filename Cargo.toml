@@ -6,7 +6,7 @@ license = "MIT OR Apache-2.0"
 name = "crate-info-mirroring"
 readme = "README.md"
 repository = "https://github.com/CrabeDeFrance/crate-info-mirroring"
-version = "2.0.0"
+version = "0.1.0"
 edition = "2021"
 
 [[bin]]
