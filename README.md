@@ -25,7 +25,7 @@ $ crate-info-mirroring --help
 And:
 
 ```sh
-$ crate-info-mirroring -i <crate_package_directory> -o <crate_metadata_directory>
+$ crate-info-mirroring -i <input_crate_directory> -o <output_crate_metadata_directory>
 ```
 
 It is possible to use a configuration file. In this case, command line options will override configuration in file (except for verbosity, the system will take the most verbose configuration).
@@ -36,9 +36,9 @@ Example of config file:
 
 ```toml
 # input directory
-input = "./path/to/input"
+input = "./path/to/input_crate_directory"
 # output directory
-output = "./path/to/input"
+output = "./path/to/output_crate_metadata_directory"
 # number of concurrent processes
 count = 16
 # log level filtering ( Off, Error, Warn, Info, Debug, Trace )
