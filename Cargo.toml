@@ -1,0 +1,26 @@
+[package]
+authors = ["Crabe De France <crabe.france@gmail.com>"]
+description = "Mirror cargo crate metadata"
+keywords = ["cargo", "cli", "dependencies", "crates"]
+license = "MIT OR Apache-2.0"
+name = "crate-info-mirroring"
+readme = "README.md"
+repository = "https://github.com/CrabeDeFrance/crate-info-mirroring"
+version = "2.0.0"
+edition = "2021"
+
+[[bin]]
+name = "crate-info-mirroring"
+path = "src/main.rs"
+
+[dependencies]
+threadpool = "1"
+clap = { version = "4", features = ["derive"] }
+g-k-crates-io-client = "0.27"
+serde = "1"
+serde_derive = "1"
+serde_json = "1"
+log = { version = "0.4", features = [ "serde" ] }
+simplelog = "0.12"
+clap-verbosity-flag = "2"
+toml = "0.8.8"
